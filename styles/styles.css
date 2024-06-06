@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-tercearia: #22d4f6;
+  --cor-houver: #272727;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+.cabecalho {
+  display: flex;
+  gap: 80px;
+  padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__link {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--cor-tercearia);
+  text-decoration: none;
+}
+
+main {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: -67px;
+}
+
+.apresentacao__titulo {
+  font-size: 30px;
+  font-family: "Krona One", sans-serif;
+}
+
+.titulo__destaque {
+  color: var(--cor-tercearia);
+  font-family: "Krona One", sans-serif;
+}
+
+.apresentacao__texto {
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.links__subtitulo {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.links__link {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid var(--cor-tercearia);
+  width: 378px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+.links__link:hover {
+  background-color: var(--cor-houver);
+}
+
+.estudo {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400px;
+  span {
+    color: var(--cor-tercearia);
+  }
+}
+
+.conteudo_descricao {
+  font-size: 15px;
+}
+footer {
+  color: var(--cor-primaria);
+  background-color: var(--cor-tercearia);
+  padding: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
