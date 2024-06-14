@@ -34,7 +34,7 @@ body {
 }
 
 main {
-  padding: 5% 15%;
+  padding: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +45,13 @@ main {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-left: -67px;
+}
+
+.apresentacao__conteudo_curriculo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .apresentacao__titulo {
@@ -53,13 +59,32 @@ main {
   font-family: "Krona One", sans-serif;
 }
 
+.apresentacao__titulo_curriculo,
+.apresentacao__titulo__about {
+  width: max-content;
+  font-family: "Krona One", sans-serif;
+  color: var(--cor-secundaria);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 6px var(--cor-tercearia);
+}
+
 .titulo__destaque {
   color: var(--cor-tercearia);
   font-family: "Krona One", sans-serif;
 }
 
+.titulo_empresa {
+  color: #34c5d8;
+}
+
 .apresentacao__texto {
   font-size: 24px;
+}
+
+.apresentao__descricao {
+  text-align: justify;
 }
 
 .links {
@@ -92,7 +117,9 @@ main {
   background-color: var(--cor-houver);
 }
 
-.estudo {
+.estudo,
+.Certificado,
+.apresentao_descricao {
   font-family: sans-serif;
   font-size: 15px;
   font-weight: 400px;
@@ -101,9 +128,46 @@ main {
   }
 }
 
+.Certificado li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  li + & {
+    margin-top: 12px;
+  }
+}
+
 .conteudo_descricao {
   font-size: 15px;
 }
+
+.img_curriculo {
+  padding-left: 60px;
+}
+
+.img__emoticon__about {
+  display: flex;
+  justify-content: center;
+}
+
+.Certificado a {
+  align-self: center;
+  text-decoration: none;
+  color: var(--cor-primaria);
+  background-color: var(--cor-tercearia);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: 0 0 6px var(--cor-tercearia);
+}
+
+.Certificado a:hover {
+  background-color: var(--cor-secundaria);
+  transform: translateY(-2px);
+}
+
 footer {
   color: var(--cor-primaria);
   background-color: var(--cor-tercearia);
